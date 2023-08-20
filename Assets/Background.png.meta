@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f8d6d203491871f4a87d2e3f129ec53b
+guid: ff246c28a2ad30c429461ca22a2f9ea3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7993835092931228229
-    second: dogica_0
+      213: -1955448553306655712
+    second: Background_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dogica_0
+      name: Background_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 800
-        height: 600
+        width: 1322
+        height: 827
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 542b733f9aecfee60800000000000000
-      internalID: 7993835092931228229
+      spriteID: 024fa93b6e9dcd4e0800000000000000
+      internalID: -1955448553306655712
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      dogica_0: 7993835092931228229
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

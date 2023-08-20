@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FazbearPlaceHolder_0: -7313547388922030043
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

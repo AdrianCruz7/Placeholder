@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f4a3ab1697f524a4bae4a304f3dda686
+guid: 827f9f901a9f210448627e0f8cf841f6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7313547388922030043
-    second: FazbearPlaceHolder_0
+      213: -367842509190293183
+    second: TabletOn_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FazbearPlaceHolder_0
+      name: TabletOn_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1090
+        width: 233
+        height: 331
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 528115b066f018a90800000000000000
-      internalID: -7313547388922030043
+      spriteID: 1499c62df2925eaf0800000000000000
+      internalID: -367842509190293183
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      FazbearPlaceHolder_0: -7313547388922030043
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f4a3ab1697f524a4bae4a304f3dda686
+guid: 1b422a52df7121c4987ac2bd2e9080a1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7313547388922030043
-    second: FazbearPlaceHolder_0
+      213: -5261992394389525642
+    second: DialogueBox_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,13 +46,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 2, y: 2, z: 2, w: 2}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -98,22 +98,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FazbearPlaceHolder_0
+      name: DialogueBox_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1090
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 528115b066f018a90800000000000000
-      internalID: -7313547388922030043
+      spriteID: 67bea99ebc5a9f6b0800000000000000
+      internalID: -5261992394389525642
       vertices: []
       indices: 
       edges: []
@@ -121,15 +121,15 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FazbearPlaceHolder_0: -7313547388922030043
+      DialogueBox_0: -5261992394389525642
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -10,7 +10,10 @@ TrueTypeFontImporter:
   includeFontData: 1
   fontNames:
   - Dogica Pixel
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 25ebde22790245d48a6ab9539082e75b, type: 3}
+  - {fileID: 12800000, guid: 91b632f915cd4b0498d6b69adbb8e667, type: 3}
+  - {fileID: 12800000, guid: c27f8a44ff3da77448a702c4e6d7b335, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

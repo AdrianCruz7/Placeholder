@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
 using System;
 
 public class Timer : MonoBehaviour
 {
     public TextMeshProUGUI textClock;
+    private float randMinutes = UnityEngine.Random.Range(5, 10);
 
     void Start()
     {

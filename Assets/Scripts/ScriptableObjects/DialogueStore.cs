@@ -7,52 +7,37 @@ public class DialogueStore : MonoBehaviour
     [SerializeField]
     public int dialogueNumber = 0;
     [SerializeField]
-    private string prompt;
+    public Sprite pic;
     [SerializeField]
-    private int minutes;
+    public string names;
     [SerializeField]
-    private string correctChoice;
+    public string prompt;
     [SerializeField]
-    private string incorrectChoice;
+    public int minutes;
     [SerializeField]
-    private DialogueStoreScriptableObjects dialogueBank;
+    public string correctChoice;
+    [SerializeField]
+    public string incorrectChoice;
+    [SerializeField]
+    public DialogueStoreScriptableObjects dialogueBank;
 
-    private int delay = 0;
-    private int maxDelay = 1000;
-
-    private void Start()
+    public void PromptUpdate()
     {
+        pic = dialogueBank.images[dialogueNumber];
+
+        names = dialogueBank.names[dialogueNumber];
+        //Debug.Log(name);
+
         prompt = dialogueBank.dialogue[dialogueNumber];
-        Debug.Log(prompt);
+        //Debug.Log(prompt);
 
         minutes = dialogueBank.minutes[dialogueNumber];
-        Debug.Log(minutes);
+        //Debug.Log(minutes);
 
         correctChoice = dialogueBank.evilOption[dialogueNumber];
-        Debug.Log(correctChoice);
+        //Debug.Log(correctChoice);
 
         incorrectChoice = dialogueBank.goodOption[dialogueNumber];
-        Debug.Log(incorrectChoice);
-    }
-
-    private void Update()
-    {
-        delay++;
-        if (delay == maxDelay)
-        {
-            prompt = dialogueBank.dialogue[dialogueNumber];
-            Debug.Log(prompt);
-
-            minutes = dialogueBank.minutes[dialogueNumber];
-            Debug.Log(minutes);
-
-            correctChoice = dialogueBank.evilOption[dialogueNumber];
-            Debug.Log(correctChoice);
-
-            incorrectChoice = dialogueBank.goodOption[dialogueNumber];
-            Debug.Log(incorrectChoice);
-
-            delay = 0;
-        }
+        //Debug.Log(incorrectChoice);
     }
 }

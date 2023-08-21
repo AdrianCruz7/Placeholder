@@ -12,8 +12,18 @@ public class DialogueManager : MonoBehaviour
 
     public Animator animator;
 
+    public DialogueStoreScriptableObjects dialogueBank;
+    private DialogueStore grabDialogue = new DialogueStore();
+
     private Queue<string> sentences;
-    
+
+    private void Awake()
+    {
+        grabDialogue.dialogueNumber = 0;
+        grabDialogue.dialogueBank = dialogueBank;
+        grabDialogue.PromptUpdate();
+    }
+
     void Start()
     {
         sentences = new Queue<string>();
@@ -23,20 +33,23 @@ public class DialogueManager : MonoBehaviour
     {
         animator.SetBool("IsOpen", true);
 
+        NPCimage.sprite = grabDialogue.pic;
 
-        NPCimage.sprite = dialogue.image;
-        
-
-        nameText.text = dialogue.name;
+        nameText.text = grabDialogue.names;
 
         sentences.Clear();
 
-        foreach(string sentence in dialogue.sentences)
+        /*foreach(string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
-        }
+        }*/
+
+        sentences.Enqueue(grabDialogue.prompt);
 
         DisplayNextSentence();
+
+        grabDialogue.dialogueNumber++;
+        grabDialogue.PromptUpdate();
     }
 
     public void DisplayNextSentence()

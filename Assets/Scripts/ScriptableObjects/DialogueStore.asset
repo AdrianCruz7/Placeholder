@@ -12,6 +12,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e19dcfcbee41a1345a103f637b9d827d, type: 3}
   m_Name: DialogueStore
   m_EditorClassIdentifier: 
+  images:
+  - {fileID: -2903474297988106863, guid: 3b9354f8be0aacc4ea35d8f035497a01, type: 3}
+  - {fileID: -1788324494947120271, guid: b51ec900fdb9b634ca351160f3a13016, type: 3}
+  - {fileID: 1348198964877587530, guid: 0d8e5a419c7fd5442b613602e3073899, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  names:
+  - Loophole
+  - Exploit
+  - Murder
+  - Kill
+  - Unethical
+  - Life
+  - Secret
+  - Diagnosis
+  - Thievery
+  - Aliens
+  - Food
+  - Medicine
+  - AI
+  - Bribery
+  - Privacy
+  - Money
   dialogue:
   - Your boss, a high-ranking executive in a large corporation, discovers a loop
     hole that lets him take company funds for his personal gain. Upon you discovering
@@ -90,7 +124,7 @@ MonoBehaviour:
     or do you decline the offer, possibly losing billions in revenue?
   - You discover that the latest drug of a major pharmeceutical company has potentially
     lethal side effects, you are given the choice by the CEO to gain a large sum
-    of the profits if you suppress this information and allow the corperation to
+    of the profits if you suppress this information and allow the corporation to
     continue administering the drug, do you hide the side effects and maximize profits
     but kill countless people, or tell the press and risk the corporation coming
     for your life?

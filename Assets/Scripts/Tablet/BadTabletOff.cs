@@ -10,20 +10,34 @@ public class BadTabletOff : MonoBehaviour
     public GameObject screen;
     public AudioSource sound;
     public Lives lives;
+    public GameObject heart1;
+    public GameObject heart2;
+    public GameObject heart3;
 
     public void HideTablet()
     {
         lives = manager.GetComponent<Lives>();
 
-        if(lives.lives != 1)
+        switch (lives.lives)
         {
-            button.SetActive(true);
-            screen.SetActive(false);
-            sound.Play();
-        }
-        
-        
+            case 3:
+                heart3.SetActive(false);
+                button.SetActive(true);
+                screen.SetActive(false);
+                sound.Play();
+                break;
 
+            case 2:
+                heart2.SetActive(false);
+                button.SetActive(true);
+                screen.SetActive(false);
+                sound.Play();
+                break;
+            
+            case 1:
+                //game over
+                break;
+        }
         //reduce health
     }
 }

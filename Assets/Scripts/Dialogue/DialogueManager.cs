@@ -21,7 +21,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        //animator.SetBool("IsOpen", true);
+        animator.SetBool("IsOpen", true);
 
 
         NPCimage.sprite = dialogue.image;
@@ -64,7 +64,7 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        //animator.SetBool("IsOpen", false);
+        animator.SetBool("IsOpen", false);
     }
 
 }

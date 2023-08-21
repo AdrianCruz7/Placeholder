@@ -10,6 +10,12 @@ public class Timer : MonoBehaviour
     [SerializeField] public int randMinutes;
     [SerializeField] public Button confirmButton;
 
+    public DialogueManager dialogue;
+    public Dialogue dialogueText1;
+    public Dialogue dialogueText2;
+    public Dialogue dialogueText3;
+    int days = 0;
+
     TextMeshProUGUI textClock;
     public TimerAddOn m_timerAddOn;
     private string min;
@@ -53,7 +59,23 @@ public class Timer : MonoBehaviour
         if(hourInt == 0) { hourInt = 12; }
         hour = hourInt.ToString();
 
-
+        if(randMinutes >= 30)
+        {
+            days++;
+            randMinutes = 0;
+            if(days == 1)
+            {
+                dialogue.StartDialogue(dialogueText1);
+            }
+            if (days == 2)
+            {
+                dialogue.StartDialogue(dialogueText2);
+            }
+            if(days == 3)
+            {
+                dialogue.StartDialogue(dialogueText3);
+            }
+        }
         //timeTracker += randMinutes;
         //if (randMinutes >= 30)
         //{

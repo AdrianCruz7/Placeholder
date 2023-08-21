@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8ce08e78a55c85b458f4a159333f27c8
+guid: e54e1ed6c4646e44d868d7e2526959c3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5904415999631887423
-    second: depositphotos_27088923-stock-photo-privacy-concept_jpg_processed_0
+      213: 5493830003656240771
+    second: kyle2_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: depositphotos_27088923-stock-photo-privacy-concept_jpg_processed_0
+      name: kyle2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 96
+        width: 108
+        height: 170
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f3c01389113b0f150800000000000000
-      internalID: 5904415999631887423
+      spriteID: 38e2050e7410e3c40800000000000000
+      internalID: 5493830003656240771
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      depositphotos_27088923-stock-photo-privacy-concept_jpg_processed_0: 5904415999631887423
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

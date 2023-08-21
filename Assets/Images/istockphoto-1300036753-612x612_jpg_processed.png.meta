@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      istockphoto-1300036753-612x612_jpg_processed_0: -3612594726254569806
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

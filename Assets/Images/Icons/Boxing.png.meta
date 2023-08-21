@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Boxing_0: -2252183428829152953
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

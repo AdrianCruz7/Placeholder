@@ -16,7 +16,6 @@ public class UIManager : Singleton<UIManager>
 	////[SerializeField] TMP_Text timerUI;
 	//[SerializeField] GameObject gameOverUI;
 	[SerializeField] GameObject titleUI;
-	[SerializeField] GameObject EndOfDayUI;
 	//[SerializeField] GameObject victoryUI;
 
 	public void ShowTitle(bool show = true)
@@ -35,11 +34,6 @@ public class UIManager : Singleton<UIManager>
         //Debug.Log("Win yippee");
         //victoryUI.SetActive(show);
     }
-
-	public void ShowEndOfDay(bool show)
-	{
-		EndOfDayUI.SetActive(show);
-	}
 
 	public void SetHealth(int health)
 	{

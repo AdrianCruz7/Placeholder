@@ -20,12 +20,12 @@ public class Timer : MonoBehaviour
     public TimerAddOn m_timerAddOn;
     private string min;
     DateTime time = DateTime.Now;
+    int timeTracker = 0;
 
     void Start()
     {
         textClock = GetComponent<TextMeshProUGUI>();
         m_timerAddOn = GetComponent<TimerAddOn>();
-        
     }
 
     string LeadingZero(int n)
@@ -66,22 +66,14 @@ public class Timer : MonoBehaviour
             if(days == 1)
             {
                 dialogue.StartDialogue(dialogueText1);
-               
-                
             }
             if (days == 2)
             {
                 dialogue.StartDialogue(dialogueText2);
-                
-                
-      
             }
             if(days == 3)
             {
                 dialogue.StartDialogue(dialogueText3);
-               
-                
-              
             }
         }
         //timeTracker += randMinutes;
@@ -102,11 +94,10 @@ public class Timer : MonoBehaviour
         //confirmButton.onClick.AddListener(delegate { ParameterOnClick("Pressed!"); });
     }
 
+    private void ParameterOnClick(string test)
+    {
 
 
-<<<<<<< Updated upstream
         //Debug.Log(min);
     }
-=======
->>>>>>> Stashed changes
 }

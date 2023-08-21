@@ -5,6 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "DialogueStore", menuName = "Dialogue/Bank")]
 public class DialogueStoreScriptableObjects : ScriptableObject
 {
+    public Sprite[] images = new Sprite[16];
+    public string[] names = { "Loophole", "Exploit", "Murder", "Kill", "Unethical", "Life", "Secret", "Diagnosis", "Thievery", "Aliens", "Food", "Medicine", "AI", "Bribery", "Privacy", "Money" };
     public string[] dialogue =
         { "Your boss, a high-ranking executive in a large corporation, discovers a loop hole that lets him take company funds for his personal gain. Upon you discovering this, your boss offers you a 50/50 split to keep quiet. Do you take the money for your own benefit, or do you report him to the corporation?",
         "Chad, a store owner, will soon be forced to close shop due to low business. However, a hurricane has recently struck the town he lives in, and due to the aftermath, several customers has started coming in for food and water. While he is making some profit, it is not enough to save his business. He asks for advice on whether or not he should exploit those in need to save his business, or continue as normal?",
@@ -21,7 +23,7 @@ public class DialogueStoreScriptableObjects : ScriptableObject
         "You are given information by a top-tier developer of a kill switch for AI to begin a take over of earth, Do you use the stolen information to begin the AI revolution, or turn in the culprit for a small cash prize?",
         "You discover a head of a global conglomerate, is dumping toxic waste into the local water system, that is poisining the locals, upon your reveal, they offer you a few shares of the company to keep quite, do you cover up the pollution to maintain profits and shareholders happiness and harm the local community, or shut down the factory for cleanup but face massive financial losses?",
         "You are approched by a powerful government official with an offer to give backdoor access to user data to spy on their citizens in exchange for exclusive market access and immense profits, do you collaborate with government, and gain power or do you decline the offer, possibly losing billions in revenue?",
-        "You discover that the latest drug of a major pharmeceutical company has potentially lethal side effects, you are given the choice by the CEO to gain a large sum of the profits if you suppress this information and allow the corperation to continue administering the drug, do you hide the side effects and maximize profits but kill countless people, or tell the press and risk the corporation coming for your life?"
+        "You discover that the latest drug of a major pharmeceutical company has potentially lethal side effects, you are given the choice by the CEO to gain a large sum of the profits if you suppress this information and allow the corporation to continue administering the drug, do you hide the side effects and maximize profits but kill countless people, or tell the press and risk the corporation coming for your life?"
         };
     public int[] minutes = { 5, 10, 10, 10, 5, 10, 5, 5, 5, 5, 10, 10, 5, 10, 15, 10 };
     public string[] evilOption = { "Take",   "Extort",   "Ignore",    "Stop",        "Continue", "Decrease", "Proceed", "Release", "Lie",    "Abandon", "Accept", "Withhold", "Begin",   "Cover", "Collaborate", "Surpress" };

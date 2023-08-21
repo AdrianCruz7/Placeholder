@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      thumb16_jpg_processed_0: 4713061323489259145
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

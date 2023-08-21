@@ -22,15 +22,10 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         //animator.SetBool("IsOpen", true);
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
+
 
         NPCimage.sprite = dialogue.image;
         
-=======
->>>>>>> 8a48cf293e628a8f4f43cee0e29ab489fa805959
->>>>>>> Stashed changes
 
         nameText.text = dialogue.name;
 
@@ -69,15 +64,7 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-<<<<<<< Updated upstream
         //animator.SetBool("IsOpen", false);
-=======
-<<<<<<< HEAD
-       // animator.SetBool("IsOpen", false);
-=======
-        //animator.SetBool("IsOpen", false);
->>>>>>> 8a48cf293e628a8f4f43cee0e29ab489fa805959
->>>>>>> Stashed changes
     }
 
 }

@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cannibal_0: 5295185506324920285
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

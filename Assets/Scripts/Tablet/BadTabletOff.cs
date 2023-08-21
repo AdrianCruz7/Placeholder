@@ -25,6 +25,7 @@ public class BadTabletOff : MonoBehaviour
                 button.SetActive(true);
                 screen.SetActive(false);
                 sound.Play();
+                lives.lives--;
                 break;
 
             case 2:
@@ -32,9 +33,12 @@ public class BadTabletOff : MonoBehaviour
                 button.SetActive(true);
                 screen.SetActive(false);
                 sound.Play();
+                lives.lives--;
                 break;
             
             case 1:
+                heart1.SetActive(false);
+
                 //game over
                 break;
         }

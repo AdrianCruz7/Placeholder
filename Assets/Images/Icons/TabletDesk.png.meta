@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TabletDesk_0: 1299976506217187966
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -9,8 +9,12 @@ public class TabletOn : MonoBehaviour
     public GameObject button;
     public GameObject screen;
     public GameObject dialogueManager;
+    public Button bad;
+    public Button good;
+    
     private DialogueManager dialogue;
     private Dialogue d;
+
 
     public void HideButton()
     {

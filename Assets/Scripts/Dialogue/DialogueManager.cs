@@ -9,16 +9,19 @@ public class DialogueManager : MonoBehaviour
     public Image NPCimage;
     public TMP_Text nameText;
     public TMP_Text dialogueText;
+    public TMP_Text badText;
+    public TMP_Text goodText;
 
     public Animator animator;
 
     public DialogueStoreScriptableObjects dialogueBank;
-    private DialogueStore grabDialogue = new DialogueStore();
+    public DialogueStore grabDialogue;
 
     private Queue<string> sentences;
 
     private void Awake()
     {
+        grabDialogue = new DialogueStore();
         grabDialogue.dialogueNumber = 0;
         grabDialogue.dialogueBank = dialogueBank;
         grabDialogue.PromptUpdate();
@@ -36,6 +39,10 @@ public class DialogueManager : MonoBehaviour
         NPCimage.sprite = grabDialogue.pic;
 
         nameText.text = grabDialogue.names;
+        badText.text = grabDialogue.incorrectChoice;
+        goodText.text = grabDialogue.correctChoice;
+
+
 
         sentences.Clear();
 

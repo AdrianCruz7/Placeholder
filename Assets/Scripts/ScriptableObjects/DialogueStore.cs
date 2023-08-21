@@ -35,9 +35,9 @@ public class DialogueStore : MonoBehaviour
         //Debug.Log(minutes);
 
         correctChoice = dialogueBank.evilOption[dialogueNumber];
-        //Debug.Log(correctChoice);
+        Debug.Log(correctChoice);
 
         incorrectChoice = dialogueBank.goodOption[dialogueNumber];
-        //Debug.Log(incorrectChoice);
+        Debug.Log(incorrectChoice);
     }
 }

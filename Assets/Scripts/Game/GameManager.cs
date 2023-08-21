@@ -113,7 +113,7 @@ public class GameManager : Singleton<GameManager>
 
     public void SetGameOver()
     {
-        //stopGameEvent.Notify();
+        stopGameEvent.Notify();
         state = State.GAME_OVER;
 
     }
@@ -148,11 +148,7 @@ public class GameManager : Singleton<GameManager>
     {
         playSFX.Play();
         Application.Quit();
-<<<<<<< Updated upstream
         //EditorApplication.isPlaying = false;
-=======
-      //  EditorApplication.isPlaying = false;
->>>>>>> Stashed changes
     }
 
     public void EndOfDay()

@@ -3,11 +3,8 @@
 //using Unity.VisualScripting;
 //using UnityEditor.Experimental.GraphView;
 //using UnityEngine;
-<<<<<<< Updated upstream
 //using static Unity.Collections.AllocatorManager;
 //using static UnityEngine.Rendering.DebugUI;
-=======
->>>>>>> Stashed changes
 
 //[CreateAssetMenu(fileName = "TutorialDialogueStore", menuName = "Dialogue/Tutorial")]
 //public class TutorialDialogueStoreScriptableObjects : ScriptableObject

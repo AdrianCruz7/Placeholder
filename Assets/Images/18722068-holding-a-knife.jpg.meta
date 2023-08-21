@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      18722068-holding-a-knife_0: 1348198964877587530
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

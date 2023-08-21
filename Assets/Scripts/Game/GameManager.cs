@@ -6,6 +6,7 @@ using TMPro;
 
 using Unity.VisualScripting;
 using System;
+using UnityEditor;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -15,8 +16,6 @@ public class GameManager : Singleton<GameManager>
 
     [SerializeField] GameObject playerPrefab;
     [SerializeField] Transform playerStart;
-
-    //[SerializeField] GameObject[] pickups;
 
     [SerializeField] private float gameTimerMax = 60;
 
@@ -31,8 +30,7 @@ public class GameManager : Singleton<GameManager>
     //DateTime endTime;
     private float score = 5000;
     private int coins = 0;
-    //[SerializeField] private int enemyKills;
-    //[SerializeField] private int totalEnemies;
+   
     public enum State
     { 
         TITLE,
@@ -60,12 +58,6 @@ public class GameManager : Singleton<GameManager>
         //float timeSpeed = FindObjectOfType<TimeManager>().timeSpeed;
         var music = GetComponent<AudioSource>();
 
-        //if (enemyKills >= totalEnemies)
-        //{
-        //    SetGameWon();
-        //    enemyKills = 0;
-        //}
-        //Debug.Log(state);
         switch (state)
         {
             case State.TITLE:
@@ -73,19 +65,10 @@ public class GameManager : Singleton<GameManager>
                 music.Stop();
                 //gameMusic.Play(transform);
                 //if (!gameMusicPlayer.isPlaying) gameMusicPlayer.Play();
-                //var cam = FindObjectOfType<RollerCamera>();
-                //cam.GetComponent<RollerCamera>().ResetView();
+
                 UIManager.Instance.ShowTitle(true);
                 UIManager.Instance.ShowGameOver(false);
-                //Cursor.lockState = CursorLockMode.None;
-                //Cursor.visible = true;
-                //foreach (var pickup in pickups)
-                //{
-                //	//pickup.gameObject.SetActive(true);
-                //}
-                //var player = FindObjectOfType<ControllerCharacter2D>();
-                //if (player != null) Destroy(player.gameObject);
-                //score = 0;
+
 				break;
             case State.START_GAME:
                 //Debug.Log("Start Game II");
@@ -101,48 +84,13 @@ public class GameManager : Singleton<GameManager>
                 //gameMusicPlayer.clip = gameMusic;
                 //gameMusicPlayer.Play();
                 UIManager.Instance.ShowTitle(false);
-                //Cursor.lockState = CursorLockMode.Locked;
-                //if (FindObjectOfType<CharacterPlayer>() == null) Instantiate(playerPrefab, playerStart.position, playerStart.rotation);
-                //if (FindObjectOfType<ControllerCharacter2D>() == null)
-                //{
-                //    cplayer = Instantiate(playerPrefab, playerStart.position, playerStart.rotation);
-                //}
-                //player = FindObjectOfType<ControllerCharacter2D>();
-                
-                //Respawnable[] respawnables = FindObjectsOfType<Respawnable>();
-                //foreach (Respawnable respawnable in respawnables)
-                //{
-                //    Debug.Log("Respawn");
-                //    respawnable.Respawn();
-                //}
-                //player.Enable();
-                //var enemies = FindObjectsOfType<AICharacter2D>();
-                //foreach (var enemy in enemies)
-                //{
-                //    Destroy(enemy.gameObject);
-                //}
-                //if (player != null)
-                //{
-                //    //FindObjectOfType<CinemachineFreeLook>().LookAt = player.transform;
-                //    //FindObjectOfType<CinemachineFreeLook>().Follow = player.transform;
-                //}
-				//UIManager.Instance.SetScore(0);
-				//UIManager.Instance.SetHealth(100);
+
                 state = State.PLAY_GAME;
                 break;
             case State.PLAY_GAME:
                 score -= Time.deltaTime * 5;
                 UIManager.Instance.SetScore((int)score);
-                //Debug.Log("Play Game");
-                //Debug.Log("Play Game");
-                //gameTimer -= Time.deltaTime * timeSpeed;
-                //UIManager.Instance.SetTimer(gameTimer, gameTimerMax);
-                //if (gameTimer <= 0)
-                //{
-                //    var playerHP = FindObjectOfType<Health>();
-                //    playerHP.OnApplyDamage(1000);
-                //}
-                //gameTimer += Time.deltaTime;
+
                 break;
             case State.GAME_OVER:
                 //Debug.Log("Game Over");
@@ -158,16 +106,7 @@ public class GameManager : Singleton<GameManager>
                 }
                 break;
             case State.GAME_WON:
-                //Debug.Log("Game Won");
-                //player = FindObjectOfType<ControllerCharacter2D>();
-                //if (player != null) Destroy(player.gameObject);
-                //UIManager.Instance.ShowGameWin(true);
-                //if (music != null)
-                //{
-                //    music.Stop();
-                //    music.clip = gameMusic.audioClips[1];
-                //    music.Play();
-                //}
+
                 stateTimer -= Time.deltaTime;
 				if (stateTimer <= 0)
 				{
@@ -241,5 +180,11 @@ public class GameManager : Singleton<GameManager>
     {
         coins++;
         UIManager.Instance.SetCoin(coins);
+    }
+
+    public void OnApplicationQuit()
+    {
+        Application.Quit();
+        EditorApplication.isPlaying = false;
     }
 }

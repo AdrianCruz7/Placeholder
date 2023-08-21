@@ -14,9 +14,6 @@ public class GameManager : Singleton<GameManager>
 
     [SerializeField] AudioData gameMusic;
 
-    [SerializeField] GameObject playerPrefab;
-    [SerializeField] Transform playerStart;
-
     [SerializeField] private float gameTimerMax = 60;
 
     [Header("Events")]
@@ -25,6 +22,7 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] EventRouter winGameEvent;
 
     GameObject cplayer;
+    public SimpleDiaolgueManager dialogue;
 
     DateTime startTime = DateTime.Now;
     //DateTime endTime;
@@ -186,5 +184,20 @@ public class GameManager : Singleton<GameManager>
     {
         Application.Quit();
         EditorApplication.isPlaying = false;
+    }
+
+    public void EndOfDay()
+    {
+        UIManager.Instance.ShowEndOfDay(true);
+        
+        StartCoroutine(TimeCoroutine());
+        
+    }
+    IEnumerator TimeCoroutine()
+    {
+        yield return new WaitForSeconds(2.0f);
+        
+        
+        UIManager.Instance.ShowEndOfDay(false);
     }
 }

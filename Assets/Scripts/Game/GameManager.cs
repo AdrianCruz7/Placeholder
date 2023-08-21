@@ -25,6 +25,7 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] EventRouter stopGameEvent;
     [SerializeField] EventRouter winGameEvent;
 
+    public SimpleDiaolgueManager dialogue;
     GameObject cplayer;
 
     DateTime startTime = DateTime.Now;
@@ -191,5 +192,21 @@ public class GameManager : Singleton<GameManager>
         playSFX.Play();
         Application.Quit();
         EditorApplication.isPlaying = false;
+    }
+
+    public void EndOfDay()
+    {
+        dialogue.EndDialogue();
+        UIManager.Instance.ShowEndOfDay(true);
+
+        StartCoroutine(TimeCoroutine());
+
+    }
+    IEnumerator TimeCoroutine()
+    {
+        yield return new WaitForSeconds(2.0f);
+
+
+        UIManager.Instance.ShowEndOfDay(false);
     }
 }

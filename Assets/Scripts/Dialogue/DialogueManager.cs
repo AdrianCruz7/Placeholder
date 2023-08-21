@@ -31,7 +31,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        animator.SetBool("IsOpen", true);
+        //animator.SetBool("IsOpen", true);
 
         NPCimage.sprite = grabDialogue.pic;
 
@@ -83,14 +83,14 @@ public class DialogueManager : MonoBehaviour
     public void BadEndDialogue()
     {
         //Play shock sound
-        //Set tablet down
+        //Set tablet down and place on table
         //Reduce Health
     }
     
     public void GoodEndDialogue()
     {
         //Play chime sound
-        //Set tablet down
+        //Set tablet down and place on table
     }
 
 }

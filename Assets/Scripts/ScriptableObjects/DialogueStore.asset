@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19dcfcbee41a1345a103f637b9d827d, type: 3}
+  m_Name: DialogueStore
+  m_EditorClassIdentifier: 
+  dialogue:
+  - Your boss, a high-ranking executive in a large corporation, discovers a loop
+    hole that lets him take company funds for his personal gain. Upon you discovering
+    this, your boss offers you a 50/50 split to keep quiet. Do you take the money
+    for your own benefit, or do you report him to the corporation?
+  - Chad, a store owner, will soon be forced to close shop due to low business. However,
+    a hurricane has recently struck the town he lives in, and due to the aftermath,
+    several customers has started coming in for food and water. While he is making
+    some profit, it is not enough to save his business. He asks for advice on whether
+    or not he should exploit those in need to save his business, or continue as normal?
+  - A small town in Wyoming has been struggling with overpopulation and does not
+    have the resources to expand. As a result, there has been a large amount of murders
+    being commited by a man living in the town, claiming that he is 'fixing the problem'.
+    Do you allow him to continue reducing the population, or do you intervene and
+    send police to arrest him?
+  - 'Mary, a government official, is proposing a new law to control who is able to
+    have children based on their wealth and social standing, and is able to pull
+    some strings to make sure it goes into effect. An assassination is planned by
+    another opposing government official, Oliver, to prevent the bill from passing.
+    Do you intervene Oliver''s plans to make sure the bill passes, or do you allow
+    the assassination to happen? '
+  - Jeremy, a wealthy businessman who owns multiple factories, find people in impoverished
+    areas to recruit, promising them high paying jobs. However, he instead exploits
+    them and forces them to work in his factories with no pay. Jeremy is making a
+    large profit and plans on using it to become a shareholder of the company you
+    are currently working at. Do you allow him to continue to his business practices,
+    or do you report him to the authorities?
+  - David, a scientist, has discovered a way to drastically increase or decrease
+    the lifespan of people using two pills. He has given you the recipe for both
+    the pills and has asked that you manufacture and advertise the lifespan increasing
+    pill. You can choose to follow his wishes, or produce the lifespan decreasing
+    pill instead.
+  - Henry, a skilled hacker, has stumbles upon a classified government document containing
+    information about an operation that threatens international security. It involves
+    launching a cyberattack on a foreign nation's power grid, which could lead to
+    a large amount of deaths. He asks you for advice to either leak the information
+    and potentially save countless lives, or stay silent and let the operation proceed?
+  - Martha is an AI programmer responsible for developing a medical AI system that
+    can accurately diagnose diseases. During testing, she discovers that the AI occasionally
+    makes incorrect diagnoses that could lead to lethal consequences for patients.
+    She asks you for advice to either fix the issues before deployment, which could
+    delay the project, or release the AI as it is, potentially endangering patient
+    lives to meet deadlines.
+  - There has been a rise of break-ins of stores all across the country by an unknown
+    gang. You are aware of the location of this gang and have been given some of
+    the stolen money to keep quiet on the location of it. The police have gone to
+    you and have asked for the whereabouts of the gang, threatening to arrest you.
+    Do you lie your way out and pretend to know nothing, or do you expose the location
+    of the gang, potentially threatening your life.
+  - Serra, an astronaut, has gone on a mission to explore a nearby planet. During
+    her expedition, she finds an alien civilization suffering from an outbreak. They
+    offer her advanced technology in exchange for taking samples of the disease back
+    to Earth for research. She realizes that the disease could be extremely deadly
+    to humanity if not contained properly. She asks you for advice on whether to
+    take samples and risk a global pandemic, or abandon the aliens.
+  - In the small town of Clinton, Virginia, you stumble upon a clandestine chain
+    of cannibalistic restaurants due to a former employee's revelation; you're faced
+    with a bribe from the company's president Cire Relok, do you accept their hush
+    money or blow the whistle to food regulators?
+  - A CEO of a groundbreaking medical technology company has developed a cure for
+    a deadly disease, however production of this cure will destroy many plants needed
+    for livestock survival, do you mass produce the cure killing off several types
+    of live stock or withhold the cure, and allow the disease to continue it's rein
+    of terror?
+  - You are given information by a top-tier developer of a kill switch for AI to
+    begin a take over of earth, Do you use the stolen information to begin the AI
+    revolution, or turn in the culprit for a small cash prize?
+  - You discover a head of a global conglomerate, is dumping toxic waste into the
+    local water system, that is poisining the locals, upon your reveal, they offer
+    you a few shares of the company to keep quite, do you cover up the pollution
+    to maintain profits and shareholders happiness and harm the local community,
+    or shut down the factory for cleanup but face massive financial losses?
+  - You are approched by a powerful government official with an offer to give backdoor
+    access to user data to spy on their citizens in exchange for exclusive market
+    access and immense profits, do you collaborate with government, and gain power
+    or do you decline the offer, possibly losing billions in revenue?
+  - You discover that the latest drug of a major pharmeceutical company has potentially
+    lethal side effects, you are given the choice by the CEO to gain a large sum
+    of the profits if you suppress this information and allow the corperation to
+    continue administering the drug, do you hide the side effects and maximize profits
+    but kill countless people, or tell the press and risk the corporation coming
+    for your life?
+  minutes: 050000000a0000000a0000000a000000050000000a000000050000000500000005000000050000000a0000000a000000050000000a0000000f0000000a000000
+  evilOption:
+  - Take
+  - Extort
+  - Ignore
+  - Stop
+  - Continue
+  - Decrease
+  - Proceed
+  - Release
+  - Lie
+  - Abandon
+  - Accept
+  - Withhold
+  - Begin
+  - Cover
+  - Collaborate
+  - Surpress
+  goodOption:
+  - Report
+  - Continue
+  - Intervene
+  - Assassinate
+  - Report
+  - Increase
+  - Leak
+  - Fix
+  - Expose
+  - Risk
+  - Expose
+  - Produce
+  - Turn in
+  - Stop
+  - Decline
+  - Tell

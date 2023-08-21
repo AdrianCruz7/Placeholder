@@ -76,19 +76,7 @@ public class Timer : MonoBehaviour
                 dialogue.StartDialogue(dialogueText3);
             }
         }
-<<<<<<< Updated upstream
 
-        //string sec = LeadingZero(time.Second);
-        //Debug.Log(sec);
-        //timeTracker += randMinutes;
-        //if (randMinutes >= 30)
-        //{
-        //    //Debug.Log("TimeTracker: " + timeTracker);
-        //    Application.Quit();
-        //    Debug.Log("Quit");
-        //}
-=======
->>>>>>> Stashed changes
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -97,13 +85,12 @@ public class Timer : MonoBehaviour
 
         textClock.text = hour + ":" + min;
 
-        //confirmButton.onClick.AddListener(delegate { ParameterOnClick("Pressed!"); });
     }
 
     private void ParameterOnClick(string test)
     {
 
 
-        //Debug.Log(min);
+
     }
 }

@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      syrup-normal_0: 5063763354418986894
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -20,7 +20,11 @@ public class TutorialDialogueManager : MonoBehaviour
     private void Awake()
     {
         grabTutorialDialogue.dialogueNumber = 0;
+<<<<<<< Updated upstream
         //grabTutorialDialogue.tutorialDialogueBank = tutorialDialogueBank;
+=======
+        ///grabTutorialDialogue.tutorialDialogueBank = tutorialDialogueBank;
+>>>>>>> Stashed changes
         grabTutorialDialogue.PromptUpdate();
     }
 

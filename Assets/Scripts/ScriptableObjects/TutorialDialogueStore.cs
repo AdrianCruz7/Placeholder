@@ -19,8 +19,14 @@ public class TutorialDialogueStore : MonoBehaviour
     {
         //pic = tutorialDialogueBank.images[dialogueNumber];
 
+<<<<<<< Updated upstream
         //names = tutorialDialogueBank.names[dialogueNumber];
 
         //prompt = tutorialDialogueBank.dialogue[dialogueNumber];
+=======
+      //  names = tutorialDialogueBank.names[dialogueNumber];
+
+       // prompt = tutorialDialogueBank.dialogue[dialogueNumber];
+>>>>>>> Stashed changes
     }
 }

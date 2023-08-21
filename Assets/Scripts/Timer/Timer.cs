@@ -10,7 +10,7 @@ public class Timer : MonoBehaviour
     [SerializeField] public int randMinutes;
     [SerializeField] public Button confirmButton;
 
-    public DialogueManager dialogue;
+    public SimpleDiaolgueManager dialogue;
     public Dialogue dialogueText1;
     public Dialogue dialogueText2;
     public Dialogue dialogueText3;
@@ -76,6 +76,7 @@ public class Timer : MonoBehaviour
                 dialogue.StartDialogue(dialogueText3);
             }
         }
+<<<<<<< Updated upstream
 
         //string sec = LeadingZero(time.Second);
         //Debug.Log(sec);
@@ -86,6 +87,8 @@ public class Timer : MonoBehaviour
         //    Application.Quit();
         //    Debug.Log("Quit");
         //}
+=======
+>>>>>>> Stashed changes
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {

@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d9bb1aae73447e418dd42ede93e7291, type: 3}
+  m_Name: TutorialDialogueStore
+  m_EditorClassIdentifier: 
+  images:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  names:
+  - ???
+  - Mr. Syrup
+  - Mr. Syrup
+  - Mr. Syrup
+  - Mr. Syrup
+  - Mr. Syrup
+  - Mr. Syrup
+  dialogue:
+  - Hello, this is Mr. Syrup from Human Resources. I know you probably know this
+    by now, but all you need to do is make the decisions when we prompt you via the
+    tablet on your desk there.
+  - Depending on what you choose will affect the lives of whoever it concerns, so
+    I hope you put each choice you make into a heavy stipulation before clicking
+    on the answer you pick.
+  - "Remember, it is our goal to keep an eye on our country\u2019s population, as
+    national resources are running very thin."
+  - "If you make the wrong choice regarding our division\u2019s main goal, then you
+    will receive a \u201Ccontrolled shock\u201D to improve your behavior."
+  - "Each sequent shock you will receive will increase in voltage so I\u2019m sure
+    your body wouldn\u2019t be able to the pain by the third time, and we would have
+    to call an ambulance for you."
+  - Of course, that would come out of your paycheck so I trust that you will make
+    the right call when the time comes.
+  - "Alright, I\u2019ll leave you to it then. Remember, all you need to do is pick
+    up your tablet to start the day. Good luck."

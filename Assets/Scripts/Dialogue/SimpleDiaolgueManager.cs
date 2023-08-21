@@ -10,6 +10,8 @@ public class SimpleDiaolgueManager : MonoBehaviour
     public TMP_Text nameText;
     public TMP_Text dialogueText;
 
+    [SerializeField] public AudioSource audio;
+
     public Animator animator;
 
     public Queue<string> sentences;
@@ -21,6 +23,7 @@ public class SimpleDiaolgueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        audio.Play();
         animator.SetBool("IsOpen", true);
 
         NPCimage.sprite = dialogue.image;
@@ -63,6 +66,7 @@ public class SimpleDiaolgueManager : MonoBehaviour
 
     public void EndDialogue()
     {
+        audio.Play();
         animator.SetBool("IsOpen", false);
     }
 }

@@ -80,4 +80,17 @@ public class DialogueManager : MonoBehaviour
         animator.SetBool("IsOpen", false);
     }
 
+    public void BadEndDialogue()
+    {
+        //Play shock sound
+        //Set tablet down
+        //Reduce Health
+    }
+    
+    public void GoodEndDialogue()
+    {
+        //Play chime sound
+        //Set tablet down
+    }
+
 }

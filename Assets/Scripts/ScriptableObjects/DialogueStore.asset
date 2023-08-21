@@ -16,19 +16,19 @@ MonoBehaviour:
   - {fileID: -2903474297988106863, guid: 3b9354f8be0aacc4ea35d8f035497a01, type: 3}
   - {fileID: -1788324494947120271, guid: b51ec900fdb9b634ca351160f3a13016, type: 3}
   - {fileID: 1348198964877587530, guid: 0d8e5a419c7fd5442b613602e3073899, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: -5579489171804080469, guid: 1f0c7839f1e3e2e45aab9d1a30dd1576, type: 3}
+  - {fileID: -2718362979558852323, guid: b7a7026409b1e4b4885bc98abfb7ebbb, type: 3}
+  - {fileID: 8312884948814516718, guid: cd1f2e14f8d32384b88a11bc8c09a851, type: 3}
+  - {fileID: 5028030433838893484, guid: e2509ea6ba564bb41b0e9add39aa34ec, type: 3}
+  - {fileID: -6307031773293799206, guid: 28184c1a3d6a89d4488e27a4ee12c270, type: 3}
+  - {fileID: 3573036208370857778, guid: f041322cc982d60428e44edcd1d4d103, type: 3}
+  - {fileID: -2020380854274141335, guid: 8d9024f45f3ebde418b3cefa22648083, type: 3}
+  - {fileID: 5693920299638167739, guid: 4b2440bc48f7d7e4cb412982db5cad0d, type: 3}
+  - {fileID: -8375832190520239682, guid: 6d7db0c16155e494bb0dfc8ecf63aa10, type: 3}
+  - {fileID: -7761080867408125820, guid: fe435956789fb384c9947b03544d3949, type: 3}
+  - {fileID: 2099079854615322697, guid: 40d8cfb7d4589e04c8b3b4177403f665, type: 3}
+  - {fileID: -1572123482846284124, guid: 9d36d3a16510e404f9028f8a099cf364, type: 3}
+  - {fileID: 716488477388948159, guid: 3f5847cb99bb78e48881ceca3e736e61, type: 3}
   names:
   - Loophole
   - Exploit

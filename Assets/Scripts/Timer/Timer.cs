@@ -76,6 +76,9 @@ public class Timer : MonoBehaviour
                 dialogue.StartDialogue(dialogueText3);
             }
         }
+
+        //string sec = LeadingZero(time.Second);
+        //Debug.Log(sec);
         //timeTracker += randMinutes;
         //if (randMinutes >= 30)
         //{

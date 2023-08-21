@@ -13,6 +13,7 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] Texture2D mouseCursor;
 
     [SerializeField] AudioData gameMusic;
+    [SerializeField] AudioSource playSFX;
 
     [SerializeField] GameObject playerPrefab;
     [SerializeField] Transform playerStart;
@@ -30,6 +31,7 @@ public class GameManager : Singleton<GameManager>
     //DateTime endTime;
     private float score = 5000;
     private int coins = 0;
+    
    
     public enum State
     { 
@@ -65,7 +67,8 @@ public class GameManager : Singleton<GameManager>
                 music.Stop();
                 //gameMusic.Play(transform);
                 //if (!gameMusicPlayer.isPlaying) gameMusicPlayer.Play();
-
+                
+                
                 UIManager.Instance.ShowTitle(true);
                 UIManager.Instance.ShowGameOver(false);
 
@@ -164,6 +167,7 @@ public class GameManager : Singleton<GameManager>
         //    respawn.gameObject.transform.GetChild(0).gameObject.SetActive(true);
         //}
         startGameEvent.Notify();
+        playSFX.Play();
         //Debug.Log("Start game");
         state = State.START_GAME;
     }
@@ -184,6 +188,7 @@ public class GameManager : Singleton<GameManager>
 
     public void OnApplicationQuit()
     {
+        playSFX.Play();
         Application.Quit();
         EditorApplication.isPlaying = false;
     }

@@ -13,14 +13,14 @@ public class TutorialDialogueStore : MonoBehaviour
     [SerializeField]
     public string prompt;
     [SerializeField]
-    public TutorialDialogueStoreScriptableObjects tutorialDialogueBank;
+    //public TutorialDialogueStoreScriptableObjects tutorialDialogueBank;
 
     public void PromptUpdate()
     {
-        pic = tutorialDialogueBank.images[dialogueNumber];
+        //pic = tutorialDialogueBank.images[dialogueNumber];
 
-        names = tutorialDialogueBank.names[dialogueNumber];
+        //names = tutorialDialogueBank.names[dialogueNumber];
 
-        prompt = tutorialDialogueBank.dialogue[dialogueNumber];
+        //prompt = tutorialDialogueBank.dialogue[dialogueNumber];
     }
 }

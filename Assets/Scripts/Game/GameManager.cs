@@ -73,9 +73,11 @@ public class GameManager : Singleton<GameManager>
 
                 UIManager.Instance.ShowTitle(true);
                 UIManager.Instance.ShowDeadScreen(false);
+                UIManager.Instance.ShowGameEnd(false);
 
                 break;
             case State.START_GAME:
+                UIManager.Instance.ShowGameEnd(false);
                 //Debug.Log("Start Game II");
                 UIManager.Instance.SetScore((int)score);
                 if (music != null)
@@ -146,7 +148,7 @@ public class GameManager : Singleton<GameManager>
     {
         playSFX.Play();
         Application.Quit();
-        EditorApplication.isPlaying = false;
+        //EditorApplication.isPlaying = false;
     }
 
     public void EndOfDay()
@@ -168,4 +170,10 @@ public class GameManager : Singleton<GameManager>
 
         UIManager.Instance.ShowEndOfDay(false);
     }
+
+    public void MainScreen()
+    {
+        UIManager.Instance.ShowTitle();
+    }
+
 }

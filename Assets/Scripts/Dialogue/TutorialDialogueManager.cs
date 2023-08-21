@@ -12,7 +12,7 @@ public class TutorialDialogueManager : MonoBehaviour
 
     public Animator animator;
 
-    public TutorialDialogueStoreScriptableObjects tutorialDialogueBank;
+    //public TutorialDialogueStoreScriptableObjects tutorialDialogueBank;
     private TutorialDialogueStore grabTutorialDialogue = new TutorialDialogueStore();
 
     private Queue<string> sentences;
@@ -20,7 +20,7 @@ public class TutorialDialogueManager : MonoBehaviour
     private void Awake()
     {
         grabTutorialDialogue.dialogueNumber = 0;
-        grabTutorialDialogue.tutorialDialogueBank = tutorialDialogueBank;
+        //grabTutorialDialogue.tutorialDialogueBank = tutorialDialogueBank;
         grabTutorialDialogue.PromptUpdate();
     }
 

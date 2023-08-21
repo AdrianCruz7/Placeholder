@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using static Unity.Collections.AllocatorManager;
-using static UnityEngine.Rendering.DebugUI;
 
 [CreateAssetMenu(fileName = "TutorialDialogueStore", menuName = "Dialogue/Tutorial")]
 public class TutorialDialogueStoreScriptableObjects : ScriptableObject

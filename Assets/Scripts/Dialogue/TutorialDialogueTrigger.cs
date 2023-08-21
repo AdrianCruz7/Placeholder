@@ -8,6 +8,6 @@ public class TutorialDialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        FindAnyObjectByType<TutorialDialogueManager>().StartDialogue(dialogue);
+        //FindAnyObjectByType<TutorialDialogueManager>().StartDialogue(dialogue);
     }
 }

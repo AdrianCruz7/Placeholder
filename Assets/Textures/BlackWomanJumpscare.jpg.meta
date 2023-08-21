@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BlackWomanJumpscare_0: -2689950970612679278
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

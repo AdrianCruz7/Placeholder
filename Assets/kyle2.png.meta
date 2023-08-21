@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: de70f607abd4d4a47838d89d6f939db6
+guid: e54e1ed6c4646e44d868d7e2526959c3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6913109828596771111
-    second: DireAuthorityPixel_0
+      213: 5493830003656240771
+    second: kyle2_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DireAuthorityPixel_0
+      name: kyle2_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 499
-        height: 136
+        width: 108
+        height: 170
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 729a5ca03cc40ff50800000000000000
-      internalID: 6913109828596771111
+      spriteID: 38e2050e7410e3c40800000000000000
+      internalID: 5493830003656240771
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      DireAuthorityPixel_0: 6913109828596771111
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

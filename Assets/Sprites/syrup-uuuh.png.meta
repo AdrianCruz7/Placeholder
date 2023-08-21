@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      syrup-uuuh_0: -8625018311925626061
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

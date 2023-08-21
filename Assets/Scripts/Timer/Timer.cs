@@ -9,12 +9,13 @@ public class Timer : MonoBehaviour
 {
     [SerializeField] public int randMinutes;
     [SerializeField] public Button confirmButton;
+    [SerializeField] public GameManager gameManager;
 
     public SimpleDiaolgueManager dialogue;
     public Dialogue dialogueText1;
     public Dialogue dialogueText2;
     public Dialogue dialogueText3;
-    int days = 0;
+    public int days = 0;
 
     TextMeshProUGUI textClock;
     public TimerAddOn m_timerAddOn;
@@ -74,6 +75,8 @@ public class Timer : MonoBehaviour
             if(days == 3)
             {
                 dialogue.StartDialogue(dialogueText3);
+                
+                gameManager.SetGameEnd();
             }
         }
 

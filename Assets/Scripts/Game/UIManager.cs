@@ -14,9 +14,10 @@ public class UIManager : Singleton<UIManager>
 	//[SerializeField] TMP_Text scoreUI;
 	//[SerializeField] TMP_Text coinUI;
 	////[SerializeField] TMP_Text timerUI;
-	//[SerializeField] GameObject gameOverUI;
+	[SerializeField] GameObject GameEndUI;
 	[SerializeField] GameObject titleUI;
 	[SerializeField] GameObject EndOfDayUI;
+	[SerializeField] GameObject ShowDeadScreenUI;
 	//[SerializeField] GameObject victoryUI;
 
 	public void ShowTitle(bool show = true)
@@ -25,10 +26,16 @@ public class UIManager : Singleton<UIManager>
 		titleUI.SetActive(show);
 	}
 
-	public void ShowGameOver(bool show = true)
+	public void ShowGameEnd(bool show = true)
 	{
-        //gameOverUI.SetActive(show);
+        GameEndUI.SetActive(show);
+
 	}
+
+	public void ShowDeadScreen(bool show = true)
+	{
+        ShowDeadScreenUI.SetActive(show);
+    }
 
     public void ShowGameWin(bool show = true)
     {

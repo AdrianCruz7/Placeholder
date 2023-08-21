@@ -62,6 +62,11 @@ public class Timer : MonoBehaviour
         //    Debug.Log("Quit");
         //}
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
         textClock.text = hour + ":" + min;
 
         //confirmButton.onClick.AddListener(delegate { ParameterOnClick("Pressed!"); });

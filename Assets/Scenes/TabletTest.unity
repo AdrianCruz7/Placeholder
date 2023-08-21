@@ -1042,6 +1042,7 @@ MonoBehaviour:
   nameText: {fileID: 861404261}
   dialogueText: {fileID: 1576433315}
   animator: {fileID: 0}
+  dialogueBank: {fileID: 11400000, guid: 463319fe18401514fadb6c2da27eefc8, type: 2}
 --- !u!1 &1576433313
 GameObject:
   m_ObjectHideFlags: 0

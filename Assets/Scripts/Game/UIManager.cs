@@ -7,16 +7,16 @@ using UnityEngine.UI;
 
 public class UIManager : Singleton<UIManager>
 {
-	[SerializeField] Slider healthMeter;
-	//[SerializeField] Slider timeMeter;
-	//[SerializeField] Slider timeStopMeter;
-	//[SerializeField] Slider timeCooldownMeter;
-	[SerializeField] TMP_Text scoreUI;
-	[SerializeField] TMP_Text coinUI;
-	//[SerializeField] TMP_Text timerUI;
-	[SerializeField] GameObject gameOverUI;
+	//[SerializeField] Slider healthMeter;
+	////[SerializeField] Slider timeMeter;
+	////[SerializeField] Slider timeStopMeter;
+	////[SerializeField] Slider timeCooldownMeter;
+	//[SerializeField] TMP_Text scoreUI;
+	//[SerializeField] TMP_Text coinUI;
+	////[SerializeField] TMP_Text timerUI;
+	//[SerializeField] GameObject gameOverUI;
 	[SerializeField] GameObject titleUI;
-	[SerializeField] GameObject victoryUI;
+	//[SerializeField] GameObject victoryUI;
 
 	public void ShowTitle(bool show = true)
 	{
@@ -26,18 +26,18 @@ public class UIManager : Singleton<UIManager>
 
 	public void ShowGameOver(bool show = true)
 	{
-        gameOverUI.SetActive(show);
+        //gameOverUI.SetActive(show);
 	}
 
     public void ShowGameWin(bool show = true)
     {
         //Debug.Log("Win yippee");
-        victoryUI.SetActive(show);
+        //victoryUI.SetActive(show);
     }
 
 	public void SetHealth(int health)
 	{
-		healthMeter.value = Mathf.Clamp(health, 0, 100);
+		//healthMeter.value = Mathf.Clamp(health, 0, 100);
 	}
 
 	//public void SetTimer(TimeSpan time)
@@ -47,12 +47,12 @@ public class UIManager : Singleton<UIManager>
 
 	public void SetScore(int score)
 	{
-		scoreUI.text = score.ToString();
+		//scoreUI.text = score.ToString();
 	}
 
     public void SetCoin(int coin)
     {
-        coinUI.text = coin.ToString();
+       // coinUI.text = coin.ToString();
     }
 
     //public void SetTimeStop(float time, float max)

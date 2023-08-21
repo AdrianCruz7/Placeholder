@@ -95,7 +95,7 @@ public class GameManager : Singleton<GameManager>
                     //music.clip = gameMusic.audioClips[0];
                     music.Play();
                 }
-                //startGameEvent.Notify();
+                startGameEvent.Notify();
 				//gameTimer = gameTimerMax;
                 //gameMusicPlayer.Stop();
                 //gameMusicPlayer.clip = gameMusic;
